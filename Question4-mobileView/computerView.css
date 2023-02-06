@@ -4,6 +4,8 @@
     --white: rgb(187, 187, 187);
     --semiWhite-background: rgb(234, 234, 234);
     --font-size-1-5: 1.5rem;
+    --blue-background: #2690D4;
+    --black-background: black;
   }
 
   .flex {
@@ -27,6 +29,10 @@
     gap: 2rem;
   }
 
+  .grow1 {
+    flex-grow: 1;
+  }
+
   .space-around {
     justify-content: space-around;
   }
@@ -35,7 +41,7 @@
     background-color: var(--semiBlack);
     color: var(--white);
     font-size: var(--font-size-1-5);
-    padding: 5% 15%;
+    padding: 6% 15%;
     text-align: center;
   }
 
@@ -80,5 +86,44 @@
 
   .botSection {
     text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--white);
+  }
+
+  .footerPadding {
+    padding: 4% 2%;
+  }
+
+  footer h3 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+font-size: 1.5rem;
+  }
+
+  .leftDiv {
+    background-color: var(--blue-background);
+    width: 50%;
+  }
+
+  .rightDiv {
+    background-color: var(--semiBlack);
+    width: 50%;
+  }
+
+  .botFooter {
+    font-size: var(--font-size-1-5);
+    background-color: var(--black-background);
+    text-align: center;
+    justify-content: space-around;
+    padding: 2% 0;
+  }
+
+  span {
+    color: var(--blue-background);
   }
 }
