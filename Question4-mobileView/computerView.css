@@ -1,3 +1,38 @@
-@media (min-width: 980px) {
-    
+@media (min-width: 720px) {
+  :root {
+    --semiBlack: #333333;
+    --white: rgb(187, 187, 187);
+    --font-size-1-5: 1.5rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .colFlex {
+    flex-direction: column;
+  }
+
+  .centerize {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gap1-5 {
+    gap: 1.5rem;
+  }
+
+
+  header {
+    background-color: var(--semiBlack);
+    color: var(--white);
+    font-size: var(--font-size-1-5);
+    padding: 5% 15%;
+    text-align: center;
+  }
+
+  header button {
+    padding: 1rem 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.39);
+  }
 }
