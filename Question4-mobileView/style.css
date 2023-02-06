@@ -3,8 +3,11 @@
 
 :root {
   --semiBlack: #333333;
-  --white: white;
+  --white: rgb(187, 187, 187);
+  --semiWhite-background: rgb(234, 234, 234);
   --font-size-1-5: 1.5rem;
+  --blue-background: #2690d4;
+  --black-background: black;
 }
 
 *,
