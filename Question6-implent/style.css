@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Vazirmatn:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0984e2;
+  --shasow: #d0d0d0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Source Sans Pro";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.top {
+  background-color: var(--blue);
+  position: absolute;
+}
+
+.bot {
+  background-color: var(--blue);
+
+  position: absolute;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  gap: 2rem;
+  box-shadow: 0 0 1rem 1rem var(--shasow);
+  padding: 14% 4% 24%;
+}
+
+ion-icon {
+  color: var(--blue);
+  font-size: 6rem;
+}
+
+.num {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: white;
+  font-size: 2.5rem;
+}
+
+.container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 10% 15%;
+  margin-bottom: 10%;
+}
+
+@media (min-width: 720px) {
+  ion-icon {
+    font-size: 10rem;
+  }
+
+  .container {
+    font-size: 3rem;
+  }
+
+  .num {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    gap: 2rem;
+    text-align: center;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 0 3rem 0rem var(--shasow);
+    font-size: 1.7rem;
+    padding: 6% 2% 10%;
+  }
+
+  ion-icon {
+    font-size: 5rem;
+  }
+
+  .num {
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .top {
+    position: absolute;
+    top: -25%;
+    right: -15%;
+    width: 400px;
+    height: 400px;
+    background-color: var(--blue);
+  }
+
+  .bot {
+    position: absolute;
+    bottom: -25%;
+    left: -15%;
+    width: 400px;
+    height: 400px;
+    background-color: var(--blue);
+  }
+
+  .container {
+    padding: 0;
+    gap: 2rem;
+    width: 60%;
+    flex-direction: row;
+    margin: 0;
+  }
+}
