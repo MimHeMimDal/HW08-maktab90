@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Vazirmatn:wght@400;700&display=swap");
+
+:root {
+  --semiBlack: #333333;
+  --white: rgb(187, 187, 187);
+  --semiWhite-background: rgb(234, 234, 234);
+  --font-size-1-7: 1.7rem;
+  --blue-background: #2690d4;
+  --black-background: black;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Source Sans Pro";
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+
+img,
+video,
+picture {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.colFlex {
+  flex-direction: column;
+}
+
+.rowFlex {
+  flex-direction: row;
+}
+
+.centerize {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap1-5 {
+  gap: 1.5rem;
+}
+
+.gap2 {
+  gap: 2rem;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+header {
+  background-color: var(--semiBlack);
+  color: var(--white);
+  font-size: var(--font-size-1-7);
+  padding: 6% 6%;
+  text-align: center;
+}
+
+header button {
+  padding: 2rem 4rem;
+  border: 1px solid rgba(128, 128, 128, 0.39);
+}
+
+.mainPadding {
+  padding: 2% 5%;
+}
+
+.topSection {
+  text-align: center;
+  background-color: var(--semiWhite-background);
+}
+
+.topSection div {
+  flex-direction: column;
+}
+
+main h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #373737;
+}
+
+main p {
+  font-size: 2.2rem;
+  color: rgb(90, 90, 90);
+}
+
+.midSection {
+  background-color: var(--semiBlack);
+  text-align: center;
+}
+
+.midSection-container {
+  flex-direction: column;
+}
+
+.midCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--white);
+  padding: 6% 4%;
+}
+
+.botSection {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: var(--white);
+}
+
+.footerPadding {
+  padding: 4% 2%;
+}
+
+footer h3 {
+  font-size: 1.8rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+.leftDiv {
+  background-color: var(--blue-background);
+  width: 50%;
+}
+
+.rightDiv {
+  background-color: var(--semiBlack);
+  width: 50%;
+}
+
+.botFooter {
+  font-size: 1.2rem;
+  background-color: var(--black-background);
+  text-align: center;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.botFooter > * {
+  width: 50%;
+}
+
+.email {
+  font-size: var(--font-size-1-7);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+span {
+  color: var(--blue-background);
+}
+
+@media (min-width: 480px) {
+  :root {
+    --semiBlack: #333333;
+    --white: rgb(187, 187, 187);
+    --semiWhite-background: rgb(234, 234, 234);
+    --font-size-1-5: 1.5rem;
+    --blue-background: #2690d4;
+    --black-background: black;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .colFlex {
+    flex-direction: column;
+  }
+
+  .centerize {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gap1-5 {
+    gap: 1.5rem;
+  }
+
+  .gap2 {
+    gap: 2rem;
+  }
+
+  .grow1 {
+    flex-grow: 1;
+  }
+
+  .space-around {
+    justify-content: space-around;
+  }
+
+  header {
+    background-color: var(--semiBlack);
+    color: var(--white);
+    font-size: var(--font-size-1-5);
+    padding: 6% 15%;
+    text-align: center;
+  }
+
+  header button {
+    padding: 1rem 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.39);
+  }
+
+  .mainPadding {
+    padding: 2% 22%;
+  }
+
+  .topSection {
+    text-align: center;
+    background-color: var(--semiWhite-background);
+  }
+
+  .topSection div {
+    flex-direction: row;
+  }
+
+  main h3 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #373737;
+  }
+
+  main p {
+    font-size: 1.5rem;
+    color: rgb(90, 90, 90);
+  }
+
+  .midSection {
+    background-color: var(--semiBlack);
+    text-align: center;
+  }
+
+  .midSection-container {
+    flex-direction: row;
+  }
+
+  .midCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    background-color: var(--white);
+    padding: 6% 4%;
+  }
+
+  .botSection {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--white);
+  }
+
+  .footerPadding {
+    padding: 4% 2%;
+  }
+
+  footer h3 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .leftDiv {
+    background-color: var(--blue-background);
+    width: 50%;
+  }
+
+  .rightDiv {
+    background-color: var(--semiBlack);
+    width: 50%;
+  }
+
+  .botFooter {
+    font-size: var(--font-size-1-5);
+    background-color: var(--black-background);
+    text-align: center;
+    justify-content: space-around;
+    padding: 2% 0;
+  }
+
+  .email {
+    font-size: var(--font-size-1-5);
+  }
+
+  span {
+    color: var(--blue-background);
+  }
+}
